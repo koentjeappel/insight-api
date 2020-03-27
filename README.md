@@ -1,7 +1,7 @@
 # Insight-API
 
 [![Build Status](https://img.shields.io/travis/dashevo/insight-api/master.svg?branch=master)](https://travis-ci.org/dashevo/insight-api)
-[![NPM version](https://img.shields.io/npm/v/@dashevo/insight-api.svg)](https://npmjs.org/package/@dashevo/insight-api)
+[![NPM version](https://img.shields.io/npm/v/insight-api.svg)](https://npmjs.org/package/insight-api)
 [![API stability](https://img.shields.io/badge/stability-stable-green.svg)](https://nodejs.org/api/documentation.html#documentation_stability_index)
 
 > A Dash blockchain REST and WebSocket API Service
@@ -53,24 +53,24 @@ This is a backend-only service. If you're looking for the web frontend applicati
 ## Install
 
 ```bash
-npm install -g @dashevo/dashcore-node
-dashcore-node create mynode
+npm install -g pacglobal-node
+pacglobal-node create mynode
 cd mynode
-dashcore-node install @dashevo/insight-api
-dashcore-node start  # to also start the service
+pacglobal-node install @dashevo/insight-api
+pacglobal-node start  # to also start the service
 ```
 
 The API endpoints will be available by default at: `http://localhost:3001/insight-api/`
 
 ### Prerequisites
 
-- [Dashcore Node Dash 4.x](https://github.com/dashevo/dashcore-node)
+- [pacglobal Node Dash 4.x](https://github.com/koentjeappel/pacglobal-node)
 
 **Note:** You can use an existing Dash data directory, however `txindex`, `addressindex`, `timestampindex` and `spentindex` need to be enabled in `dash.conf`, as well as a few other additional fields.
 
 ### Query Rate Limit
 
-To protect the server, insight-api has a built-in query rate limiter. It can be configurable in `dashcore-node.json` with:
+To protect the server, insight-api has a built-in query rate limiter. It can be configurable in `pacglobal-node.json` with:
 
 ```json /*eslint-disable */
 
@@ -100,7 +100,7 @@ Or disabled entirely with:
 Follow the install instructions above, and ...
 
 ```bash
-dashcore-node start
+pacglobal-node start
 ```
 
 This will start the Insight-API listening on default port 3001.

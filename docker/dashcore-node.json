@@ -4,15 +4,15 @@
   "services": [
     "dashd",
     "web",
-    "@dashevo/insight-api"
+    "insight-api"
   ],
   "servicesConfig": {
     "dashd": {
       "connect": [{
         "rpchost": "127.0.0.1",
         "rpcport": 9998,
-        "rpcuser": "dashrpc",
-        "rpcpassword": "password",
+        "rpcuser": "koenpeters",
+        "rpcpassword": "koenislekker",
         "zmqpubrawtx": "tcp://127.0.0.1:29998",
         "zmqpubhashblock": "tcp://127.0.0.1:29998"
       }]

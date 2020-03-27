@@ -10,11 +10,11 @@ RUN apk add --update --no-cache \
 
 WORKDIR /insight
 
-# Copy dashcore-node
-RUN git clone --branch master --single-branch --depth 1 https://github.com/dashevo/dashcore-node.git .
+# Copy pacglobal-node
+RUN git clone --branch master --single-branch --depth 1 https://github.com/koentjeappel/pacglobal-node.git .
 
 # Copy config file
-COPY dashcore-node.json .
+COPY pacglobal-node.json .
 
 ARG VERSION
 
@@ -22,7 +22,7 @@ ARG VERSION
 RUN npm ci
 
 # Install Insight API module
-RUN bin/dashcore-node install @dashevo/insight-api@${VERSION}
+RUN bin/pacglobal-node install insight-api@${VERSION}
 
 FROM node:8-alpine
 
@@ -36,4 +36,4 @@ COPY --from=0 /insight/ .
 
 EXPOSE 3001
 
-CMD ["bin/dashcore-node", "start"]
+CMD ["bin/pacglobal-node", "start"]

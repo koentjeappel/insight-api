@@ -1,8 +1,8 @@
 {
-  "name": "@dashevo/insight-api",
-  "description": "A Dash blockchain REST and WebSocket API Service",
+  "name": "insight-api",
+  "description": "A pacglobal blockchain REST and WebSocket API Service",
   "version": "2.3.3",
-  "repository": "git://github.com/dashevo/insight-api.git",
+  "repository": "git://github.com/koentjeappel/insight-api.git",
   "contributors": [
     {
       "name": "Gustavo Cortez",
@@ -38,9 +38,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/dashevo/insight-api/issues"
+    "url": "https://github.com/koentjeappel/insight-api/issues"
   },
-  "homepage": "https://github.com/dashevo/insight-api",
+  "homepage": "https://github.com/koentjeappel/insight-api",
   "license": "MIT",
   "keywords": [
     "insight",
@@ -50,7 +50,7 @@
     "blockchain api",
     "json",
     "bitcore-dash",
-    "dashcore"
+    "pacglobal"
   ],
   "engines": {
     "node": ">=6"
@@ -61,7 +61,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "async": "^2.6.2",
-    "@dashevo/dashcore-lib": "^0.17.6",
+    "pacglobal-lib": "git+https://github.com/koentjeappel/pacglobal-lib.git",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "lodash": "^4.17.11",
