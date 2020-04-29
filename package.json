@@ -61,7 +61,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "async": "^2.6.2",
-    "pacglobal-lib": "git+https://github.com/koentjeappel/pacglobal-lib.gi",
+    "pacglobal-lib": "git+https://github.com/koentjeappel/pacglobal-lib.git",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "lodash": "^4.17.11",
