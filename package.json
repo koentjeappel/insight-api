@@ -1,6 +1,6 @@
 {
   "name": "insight-api",
-  "description": "A pacglobal blockchain REST and WebSocket API Service",
+  "description": "A PACGlobal blockchain REST and WebSocket API Service",
   "version": "2.3.3",
   "repository": "git://github.com/koentjeappel/insight-api.git",
   "contributors": [
@@ -61,7 +61,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "async": "^2.6.2",
-    "pacglobal-lib": "git+https://github.com/koentjeappel/pacglobal-lib.git",
+    "pacglobal-lib": "git+https://github.com/koentjeappel/pacglobal-lib.gi",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "lodash": "^4.17.11",
